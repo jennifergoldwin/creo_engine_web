@@ -1,0 +1,253 @@
+body{   
+    margin:0;
+    padding:0; 
+}
+
+section{
+    min-height:100vh !important;
+    overflow-x: hidden;
+    overflow-y:auto;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+/* search bar */
+.search-bar{
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    display: block;
+    width: 200px;
+    height: 36px;
+    border: 2pt solid #CCCCCC;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+.element-search-bar{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 9pt;
+    font-family: 'Open Sans';
+}
+
+.search:focus{
+    outline: none;
+}
+#icon-search{
+    font-size: 26;
+    color: #3FA9F5;
+}
+/* home */
+.middle-box{
+    height:50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.middle-box-1{
+    height:40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+#main-content-special{
+    max-height:60vh;
+}
+.img-fit{
+   float: right;
+}
+nav, .font-barlow, #timeline{
+    font-family: 'Open Sans';   
+}
+.font-poppins{
+    font-family: 'Open Sans';   
+}
+.ph-m{
+    padding:0 3rem;
+}
+#main-content-special{
+    max-height:80vh;
+    width:100%;
+}
+#main-content-special .middle-box img{
+    max-width:400px;
+    width:80%;
+}
+.text-big{
+    font-size: 2.2rem !important;
+}
+.text-main{
+    font-size: 3.3rem;
+    color:#5481B0;
+}
+.text-secondary{
+    color: #4D4D4D;
+}
+
+/* navbar */
+.custom-navbar{
+    background-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(84,85,99, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: #4D4D4D;
+} 
+.hr-line{
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+.navbar-brand img{
+    max-height:50px;
+}
+
+.nav-link{
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+#market-link{
+    color: rgb(84, 51, 255);
+}
+
+/* roadmap */
+.bg-roadmap{
+    background:url("/public/assets/bg-roadmap.png");
+    /* height: fit-content; */
+    /* margin-bottom: 10px; */
+}
+
+.roadmap-container{
+    height: 60vh; margin-left: 5px; margin-top: 40%
+}
+
+/*game*/
+
+.bg-game{
+    background: url("/public/assets/bg-game.png");
+}
+
+.game-text{
+    color: white;
+    margin-left: 30px;
+    font-family: 'Open Sans';
+}
+#our-games-text{
+    font-size: 2.3rem;
+}
+.carousel-container{
+    display: flex;
+    flex-direction: row;
+}
+.carousel-item-container{
+    margin-right: 25px;
+    margin-top: 20%;
+    width: 400px;
+    height: 465px;
+    
+    justify-content: center;
+    display: block;
+    border-radius: 20px;
+}
+#item1{
+    background-color: rgba(46, 49, 146,0.8);
+}
+#item2{
+    background-color: white;
+}
+.game-type-container{
+    margin-left: 25px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+}
+.game-type2-container{
+    margin-left: 25px;
+    border-radius: 5px;
+    border: 1.5pt solid #4975E6;
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    height: 35px;
+}
+.game-type-text{
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+    color: #4975E6;
+    font-weight: 600;
+}
+.game-img-container{
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.img-box{
+    max-width: 100%; max-height: 100%;
+}
+
+#game-desc-text{
+    color: white;
+    font-family: 'Open Sans';
+    margin-left: 25px;
+}
+
+.btn-container{
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.btn-fit{
+    margin-right: 2px;
+    width: 100px;
+    height: 50px;
+}
+#btn-visit-website{
+    margin-left: 25px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 130px;
+    background-color: transparent;
+    color: white;
+    border: 1.5pt solid white;
+    border-radius: 5px;
+}
+.btn-navigate-next{
+    background-color: transparent;
+    border: none;
+    margin-top: 20%;
+}
+
+#icon-navigate{
+    font-size: 50px;
+    color: white;
+}
+
+/*sale*/
+
+.bg-sale{
+    background: url("/public/assets/bg-sale.png");
+    background-size: 150px;
+     /* width: 1000px; */
+    height: 200px;
+}
