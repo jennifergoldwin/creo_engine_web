@@ -1,170 +1,188 @@
-<%- include ('partials/header',{title:"Creo Engine"}) %> 
-<!--Home Section-->
-<section class="bg-main" id="home">
-    <div class="ph-m">
+    <%- include ('partials/header',{title:"Creo Engine"}) %> 
+
+    <!--Home Section-->
+    <section class="bg-main page-section" id="home">
+        <div class="ph-m">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <div class="row align-items-center middle-box-1">
+                            <div class='text-left'>
+                                <p class='font-barlow text-main text-bolder'>
+                                    <span class='text-main'>CREO</span><span class='text-bold text-secondary text-bigger'>tion for All
+                                    </span>
+                                </p>
+                                <p class='text-big text-main font-poppins'>
+                                    Indonesia's Best<br>
+                                    Decentralized<br>
+                                    Gaming Platform
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col-sm-6 text-center middle-box">
+                        <img src='/public/assets/home1.png' class='img-fit'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section-->
+    <section class="bg-game page-section" id="game">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6" >
-                    <div class="row align-items-center middle-box-1">
-                        <div class='text-left'>
-                            <p class='font-barlow text-main text-bolder'>
-                                <span class='text-main'>CREO</span><span class='text-bold text-secondary text-bigger'>tion for All
-                                </span>
-                            </p>
-                            <p class='text-big text-main font-poppins'>
-                                Indonesia's Best<br>
-                                Decentralized<br>
-                                Gaming Platform
-                            </p>
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+                    <span class="game-text" id="our-games-text">
+                        Our Games
+                    </span>
+                    <p class="game-text">All CreoEngine games are interoperable,
+                        <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).</p>
+
+                </div>
+
+                <div class="col-sm-8 carousel-container">
+                    <!--card game 1-->
+                    <div class="carousel-item-container" id="item1">
+                        <br>
+                        <div class="game-type-container">
+                            <span class="game-type-text">RPG</span>
+                        </div>
+                        <div class="game-img-container">
+                            <img class="img-box" src="public/assets/game.png"> 
+                        </div>
+                        <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
+                        <div class="btn-container">
+                            <div class="btn-fit">
+                                <img class="img-box" src="public/assets/google-btn.png">
+                            </div>
+                            <div class="btn-fit">
+                                <img class="img-box" src="public/assets/apple-btn.png">
+                            </div>
+                        </div>
+                        <button id="btn-visit-website">Visit Website</button>
+                    </div>
+
+                    <div class="carousel-item-container" id="item2">
+                        <br>
+                        <div class="game-type2-container">
+                            <span class="game-type-text">More Games to come</span>
                         </div>
                     </div>
+
+                    <button class="btn-navigate-next"><span id="icon-navigate" class="material-icons">navigate_next</span></button>
+                </div>
                 
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Roadmap Section-->
+    <section class="bg-roadmap page-section" id="roadmap">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="/public/assets/roadmap1.png" class="roadmap-container" >
                 </div>
-                <div class="col-sm-6 text-center middle-box">
-                    <img src='/public/assets/home1.png' class='img-fit'>
+                <div class="col-md-4">
+                    <img src="/public/assets/roadmap2.png" class="roadmap-container">
+                </div>
+                <div class="col-md-4">
+                    <img src="/public/assets/roadmap3.png" class="roadmap-container">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Game Section-->
-<section class="bg-game" id="game">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-sm-4">
-                <span class="game-text" id="our-games-text">
-                    Our Games
-                </span>
-                <p class="game-text">All CreoEngine games are interoperable,
-                    <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).</p>
-
-            </div>
-
-            <div class="col-sm-8 carousel-container">
-                <!--card game 1-->
-                <div class="carousel-item-container" id="item1">
-                    <br>
-                    <div class="game-type-container">
-                        <span class="game-type-text">RPG</span>
-                    </div>
-                    <div class="game-img-container">
-                        <img class="img-box" src="public/assets/game.png"> 
-                    </div>
-                    <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
-                    <div class="btn-container">
-                        <div class="btn-fit">
-                            <img class="img-box" src="public/assets/google-btn.png">
+    <!--Sale Section-->
+    <section class="bg-sale page-section" id="sale">
+        <div class="container-fluid">
+            <div class="row sale-container">
+                <div class="col-md-3" style="margin-right: 60px;"> 
+                    <div class="seed-sale-container" id="container1">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="sale-text" id="s1-text">Seed Sale - 1</span>
                         </div>
-                        <div class="btn-fit">
-                            <img class="img-box" src="public/assets/apple-btn.png">
+                        <div class="live-text-container">
+                            <span class="time-text">Live SOON</span>
+                        </div>
+
+                        <div style="margin-left: 30px; margin-top: 30px;">
+                            <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
+                                Total Allocation<br>
+                                2% from total supply<br>
+                                20,000,000 CreoEngine</span>
                         </div>
                     </div>
-                    <button id="btn-visit-website">Visit Website</button>
                 </div>
 
-                <div class="carousel-item-container" id="item2">
-                    <br>
-                    <div class="game-type2-container">
-                        <span class="game-type-text">More Games to come</span>
+                <div class="col-md-3" style="margin-right: 60px" > 
+                    <div class="seed-sale-container" id="container2">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="sale-text" id="s1-text">Seed Sale - 2</span>
+                        </div>
+                        <div class="live-text-container">
+                            <span class="time-text">COMING SOON</span>
+                        </div>
+
+                        <div style="margin-left: 30px; margin-top: 30px;">
+                            <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
+                                Total Allocation<br>
+                                3% from total supply<br>
+                                30,000,000 CreoEngine</span>
+                        </div>
                     </div>
                 </div>
 
-                <button class="btn-navigate-next"><span id="icon-navigate" class="material-icons">navigate_next</span></button>
-            </div>
-            
-        </div>
-    </div>
+                <div class="col-md-3"> 
+                    <div class="seed-sale-container" id="container2">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="sale-text" id="s1-text">Seed Sale - 2</span>
+                        </div>
+                        <div class="live-text-container">
+                            <span class="time-text">COMING SOON</span>
+                        </div>
 
-</section>
-
-<!-- Roadmap Section-->
-<section class="bg-roadmap" id="roadmap">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <img src="/public/assets/roadmap1.png" class="roadmap-container" >
-            </div>
-            <div class="col-md-4">
-                <img src="/public/assets/roadmap2.png" class="roadmap-container">
-            </div>
-            <div class="col-md-4">
-                <img src="/public/assets/roadmap3.png" class="roadmap-container">
-            </div>
-            <!-- <div class="col-md-4 roadmap-container" id="roadmap1"></div>
-            <div class="col-md-4 roadmap-container" id="roadmap2"></div>
-            <div class="col-md-4 roadmap-container" id="roadmap3"></div> -->
-        </div>
-    </div>
-</section>
-
-<!--Sale Section-->
-<section class="bg-sale" id="sale">
-    <div class="container-fluid">
-        <div class="row" style="display: flex; flex-direction: row; justify-content: center; margin-top: 15%;">
-            <div class="col-md-3" style="margin-right: 60px;"> 
-                <div class="seed-sale-container" id="container1">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 1</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">Live SOON</span>
-                    </div>
-
-                    <div style="margin-left: 30px; margin-top: 30px;">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
-                            Total Allocation<br>
-                            2% from total supply<br>
-                            20,000,000 CreoEngine</span>
+                        <div style="margin-left: 30px; margin-top: 30px;">
+                            <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
+                                Total Allocation<br>
+                                5% from total supply<br>
+                                50,000,000 CreoEngine</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div> 
+        <br>
+        <%- include ('partials/footer') %> 
+    </section>
 
-            <div class="col-md-3" style="margin-right: 60px" > 
-                <div class="seed-sale-container" id="container2">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 2</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">COMING SOON</span>
-                    </div>
+    <!--Team Section-->
+    <section class="bg-team page-section" id="team">
+        <div class="container-fluid">
+            <div class="row " style="margin-top: 7%;" >
+                <div class="col-md-6">
+                    <span class="team-text" id="our-team-text">
+                        Our Team
+                    </span>
+                    <p class="team-text">The CreoEngine team is a group of developers, 
+                        <br>operators, marketers, and designers with exper-<br>tise in their respective fields</p>
 
-                    <div style="margin-left: 30px; margin-top: 30px;">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
-                            Total Allocation<br>
-                            3% from total supply<br>
-                            30,000,000 CreoEngine</span>
-                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-3"> 
-                <div class="seed-sale-container" id="container2">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 2</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">COMING SOON</span>
-                    </div>
-
-                    <div style="margin-left: 30px; margin-top: 30px;">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
-                            Total Allocation<br>
-                            5% from total supply<br>
-                            50,000,000 CreoEngine</span>
+                <div class="col-md-6 align-items-center">
+                    <div class="team-container">
+                        <img class="img-box" src="public/assets/team.png"> 
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <script src="/public//js/function.js"></script>
 
-    </div>
-
-</section>
-
-<!--Team Section-->
-<section class="bg-team" id="team">
-
-</section>
+</body>
+</html>

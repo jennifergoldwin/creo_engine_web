@@ -2,7 +2,6 @@ body{
     margin:0;
     padding:0; 
 }
-
 section{
     min-height:100vh !important;
     overflow-x: hidden;
@@ -10,7 +9,10 @@ section{
     background-position: center !important;
     background-size: cover !important;
 }
-
+/*navbar*/
+.navbar-nav > .active > a {
+    color: #3FA9F5;
+}
 /* search bar */
 .search-bar{
     background-color: white;
@@ -46,6 +48,7 @@ section{
     font-size: 26;
     color: #3FA9F5;
 }
+
 /* home */
 .middle-box{
     height:50rem;
@@ -131,7 +134,7 @@ nav, .font-barlow, #timeline{
 }
 
 .roadmap-container{
-    height: 60vh; margin-left: 5px; margin-top: 40%
+    height: 60vh; margin-left: 5px; margin-top: 30%
 }
 
 /*game*/
@@ -154,7 +157,7 @@ nav, .font-barlow, #timeline{
 }
 .carousel-item-container{
     margin-right: 25px;
-    margin-top: 20%;
+    margin-top: 15%;
     width: 400px;
     height: 465px;
     justify-content: center;
@@ -251,6 +254,9 @@ nav, .font-barlow, #timeline{
  
 }
 
+.sale-container{
+    display: flex; flex-direction: row; justify-content: center; margin-top: 10%;
+}
 .seed-sale-container{
     width: 370px;
     height: 370px;
@@ -288,7 +294,7 @@ nav, .font-barlow, #timeline{
 }
 
 #token-price-text{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 .live-text-container{
@@ -307,5 +313,54 @@ nav, .font-barlow, #timeline{
     font-size: 1.2rem;
     font-weight: 500;
     color: #5481B0;
+}
+.btn-read{
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border: 1.1pt solid white;
+    background-color: transparent;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 45px;
+    width: 190px;
+}
+#footer-text{
+    margin-top: 20px;
+    margin-left: 155px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.main_div {
+    /* margin-right: 1100px; */
+    text-align: left;
+    background: url("/public/assets/bg-footer.png");
+    /* position: sticky;
+    bottom: 0; */
+    /* width: 100%; */
+    height: 150px;
     
+}
+
+/*Team*/
+
+.team-container{
+    height: 500px;
+    background-size: cover;
+}
+
+.team-text{
+    margin-left: 30px;
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 1.1rem;
+    
+}
+#our-team-text{
+    font-size: 2.3rem;
+    font-weight: 600;
 }
