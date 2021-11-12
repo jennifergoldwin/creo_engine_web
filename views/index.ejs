@@ -39,39 +39,40 @@
                     </span>
                     <p class="game-text">All CreoEngine games are interoperable,
                         <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).</p>
-
                 </div>
 
-                <div class="col-sm-8 carousel-container">
-                    <!--card game 1-->
-                    <div class="carousel-item-container" id="item1">
-                        <br>
-                        <div class="game-type-container">
-                            <span class="game-type-text">RPG</span>
-                        </div>
-                        <div class="game-img-container">
-                            <img class="img-box" src="public/assets/game.png"> 
-                        </div>
-                        <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
-                        <div class="btn-container">
-                            <div class="btn-fit">
-                                <img class="img-box" src="public/assets/google-btn.png">
+                <div class="col-sm-8 ">
+                    <div class="gallery js-flickity">
+                        <div class="gallery-cell">
+                            <div class="carousel-item-container" id="item1">
+                                <br>
+                                <div class="game-type-container">
+                                    <span class="game-type-text">RPG</span>
+                                </div>
+                                <div class="game-img-container">
+                                    <img class="img-box" src="public/assets/game.png"> 
+                                </div>
+                                <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
+                                <div class="btn-container">
+                                    <div class="btn-fit">
+                                        <img class="img-box" src="public/assets/google-btn.png">
+                                    </div>
+                                    <div class="btn-fit">
+                                        <img class="img-box" src="public/assets/apple-btn.png">
+                                    </div>
+                                </div>
+                                <button id="btn-visit-website">Visit Website</button>
                             </div>
-                            <div class="btn-fit">
-                                <img class="img-box" src="public/assets/apple-btn.png">
+                        </div>
+                        <div class="gallery-cell">
+                            <div class="carousel-item-container" id="item2">
+                                <br>
+                                <div class="game-type2-container">
+                                    <span class="game-type-text">More Games to come</span>
+                                </div>
                             </div>
                         </div>
-                        <button id="btn-visit-website">Visit Website</button>
                     </div>
-
-                    <div class="carousel-item-container" id="item2">
-                        <br>
-                        <div class="game-type2-container">
-                            <span class="game-type-text">More Games to come</span>
-                        </div>
-                    </div>
-
-                    <button class="btn-navigate-next"><span id="icon-navigate" class="material-icons">navigate_next</span></button>
                 </div>
                 
             </div>
@@ -99,8 +100,8 @@
     <!--Sale Section-->
     <section class="bg-sale page-section" id="sale">
         <div class="container-fluid">
-            <div class="row sale-container">
-                <div class="col-md-3" style="margin-right: 60px;"> 
+            <div class="row sale-container align-items-center">
+                <div class="col-md-3" > 
                     <div class="seed-sale-container" id="container1">
                         <br>
                         <div class="seed-sale-box">
@@ -119,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3" style="margin-right: 60px" > 
+                <div class="col-md-3"  > 
                     <div class="seed-sale-container" id="container2">
                         <br>
                         <div class="seed-sale-box">
@@ -182,6 +183,7 @@
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="/public//js/function.js"></script>
 
 </body>
