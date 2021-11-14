@@ -5,23 +5,22 @@
         <div class="ph-m">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6" >
-                        <div class="row align-items-center middle-box-1">
+                    <div class="col-md-6" >
+                        <div class="row middle-box-1">
                             <div class='text-left'>
                                 <p class='font-barlow text-main text-bolder'>
                                     <span class='text-main'>CREO</span><span class='text-bold text-secondary text-bigger'>tion for All
                                     </span>
                                 </p>
                                 <p class='text-big text-main font-poppins'>
-                                    Indonesia's Best<br>
-                                    Decentralized<br>
-                                    Gaming Platform
+                                    Best Decentralized<br>
+                                    Gaming Ecosystem Platform
                                 </p>
                             </div>
                         </div>
                     
                     </div>
-                    <div class="col-sm-6 text-center middle-box">
+                    <div class="col-md-6 text-center middle-box">
                         <img src='/public/assets/home1.png' class='img-fit'>
                     </div>
                 </div>
@@ -47,7 +46,7 @@
                             <div class="carousel-item-container" id="item1">
                                 <br>
                                 <div class="game-type-container">
-                                    <span class="game-type-text">RPG</span>
+                                    <span class="game-type-text" id="game-text-1">RPG</span>
                                 </div>
                                 <div class="game-img-container">
                                     <img class="img-box" src="public/assets/game.png"> 
@@ -65,10 +64,10 @@
                             </div>
                         </div>
                         <div class="gallery-cell">
-                            <div class="carousel-item-container" id="item2">
+                            <div class="carousel-item-container" id="item1">
                                 <br>
                                 <div class="game-type2-container">
-                                    <span class="game-type-text">More Games to come</span>
+                                    <span class="game-type-text" id="game-text-2">More Games to come</span>
                                 </div>
                             </div>
                         </div>
@@ -100,18 +99,18 @@
     <!--Sale Section-->
     <section class="bg-sale page-section" id="sale">
         <div class="container">
-            <div class="row sale-container align-items-center">
-                <div class="col-md-3" > 
+            <div class="row sale-container">
+                <div class="col-md-3 container-box" id="container-box-1"> 
                     <div class="seed-sale-container" id="container1">
                         <br>
                         <div class="seed-sale-box">
                             <span class="sale-text" id="s1-text">Seed Sale - 1</span>
                         </div>
                         <div class="live-text-container">
-                            <span class="time-text">Live SOON</span>
+                            <span class="time-text">LIVE SOON</span>
                         </div>
 
-                        <div style="margin-left: 30px; margin-top: 30px;">
+                        <div style="margin-left: 35px; margin-top: 20px;">
                             <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
                                 Total Allocation<br>
                                 2% from total supply<br>
@@ -120,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3"  > 
+                <div class="col-md-3 container-box"> 
                     <div class="seed-sale-container" id="container2">
                         <br>
                         <div class="seed-sale-box">
@@ -130,7 +129,7 @@
                             <span class="time-text">COMING SOON</span>
                         </div>
 
-                        <div style="margin-left: 30px; margin-top: 30px;">
+                        <div style="margin-left: 35px; margin-top: 20px;">
                             <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
                                 Total Allocation<br>
                                 3% from total supply<br>
@@ -139,17 +138,17 @@
                     </div>
                 </div>
 
-                <div class="col-md-3"> 
+                <div class="col-md-3" id="container-box-3"> 
                     <div class="seed-sale-container" id="container2">
                         <br>
                         <div class="seed-sale-box">
-                            <span class="sale-text" id="s1-text">Seed Sale - 2</span>
+                            <span class="sale-text" id="s1-text">Seed Sale - 3</span>
                         </div>
                         <div class="live-text-container">
                             <span class="time-text">COMING SOON</span>
                         </div>
 
-                        <div style="margin-left: 30px; margin-top: 30px;">
+                        <div style="margin-left: 35px; margin-top: 20px;">
                             <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
                                 Total Allocation<br>
                                 5% from total supply<br>
@@ -167,7 +166,7 @@
     <section class="bg-team page-section" id="team">
         <div class="container">
             <div class="row " style="margin-top: 7%;" >
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <span class="team-text" id="our-team-text">
                         Our Team
                     </span>
@@ -175,10 +174,93 @@
                         <br>operators, marketers, and designers with exper-<br>tise in their respective fields</p>
 
                 </div>
-                <div class="col-md-6 align-items-center">
-                    <div class="team-container">
+                <div class="col-md-7 align-items-center" >
+                    <!-- <div class="team-container">
                         <img class="img-box" src="public/assets/team.png"> 
-                    </div>
+                    </div> -->
+                    <table class="desktop-container">
+                        <tr>
+                            <% for (var i = 0; i < 5; i++) { %>
+                                  <td>
+                                      <div style="width: 140px; height: 140px; background-size: cover;">
+                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      </div>
+                                  </td>
+                                   
+                            <% } %>
+                        </tr>
+                        <tr>
+                            <% for (var i = 5; i < 9; i++) { %>
+                                <td>
+                                    <div style="width: 150px; height: 150px; background-size: cover;">
+                                        <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                    </div>
+                                </td>
+                                       
+                            <% } %>
+                        </tr> 
+                        <tr>
+                            <% for (var i = 9; i < 13; i++) { %>
+                                <td>
+                                    <div style="width: 150px; height: 150px; background-size: cover;">
+                                        <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                    </div>
+                                </td>
+                                       
+                            <% } %>
+                        </tr> 
+                    </table>
+
+                    <table class="mobile-container">
+                        <tr>
+                            <% for (var i = 0; i < 3; i++) { %>
+                                  <td>
+                                      <div style="width: 140px; height: 140px; background-size: cover;">
+                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      </div>
+                                  </td>
+                                   
+                            <% } %>
+                        </tr>
+                        <tr>
+                            <% for (var i = 3; i < 6; i++) { %>
+                                  <td>
+                                      <div style="width: 150px; height: 150px; background-size: cover;">
+                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      </div>
+                                  </td>
+                                   
+                            <% } %>
+                        </tr>
+                        <tr>
+                            <% for (var i = 6; i < 9; i++) { %>
+                                  <td>
+                                      <div style="width: 150px; height: 150px; background-size: cover;">
+                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      </div>
+                                  </td>
+                                   
+                            <% } %>
+                        </tr>
+                        <tr>
+                            <% for (var i = 9; i < 12; i++) { %>
+                                  <td>
+                                      <div style="width: 140px; height: 140px; background-size: cover;">
+                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      </div>
+                                  </td>
+                                   
+                            <% } %>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div style="width: 140px; height: 140px; background-size: cover;">
+                                    <img src="<%= list[12] %>" style="max-width: 100%; max-height: 100%;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

@@ -45,3 +45,16 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+// function checkWidth(){
+//   $(window).resize(function () {
+//     var width = $(window).width();
+//     if (width < 820) {
+//         return true
+//     } else {
+//        return false
+//     }
+//   });
+//   $(window).trigger('resize');
+// }
+//resize function
