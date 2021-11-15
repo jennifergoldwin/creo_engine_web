@@ -34,9 +34,6 @@ app.get('',(req,res)=>{
     res.render('index',{list: listTeam})
 })
 
-// app.get('/about',(req,res)=>{
-//     res.render('about',{text: 'About Page'})
-// })
 
 // Listen on port 3000
 app.listen(port,()=> console.info(`Listening on port ${port}`))
