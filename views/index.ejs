@@ -3,25 +3,21 @@
     <!--Home Section-->
     <section class="bg-main page-section" id="home">
      
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" >
-                    <div class="row middle-box-1">
-                        <div class='text-left'>
-                            <p class='font-barlow text-main text-bolder'>
-                                <span class='text-main'>CREO</span><span class='text-bold text-secondary '>tion for All
-                                </span>
-                            </p>
-                            <p class='text-big text-main font-poppins'>
-                                Best Decentralized<br>
-                                Gaming Ecosystem Platform
-                            </p>
-                        </div>
-                    </div>
-                    
+        <div class="container" id="home-adjust">
+            <div class="row align-items-center home-container" >
+                <div class="col-md-6">
+                    <div>
+                        <p class='text-main font-barlow'>
+                            <span class='text-main text-bolder'>CREO</span><span class='text-main-2 text-bolder '>tion for All</span>
+                        </p>
+                        <p class=' text-main font-barlow'>
+                            Best Decentralized<br>
+                            Gaming Ecosystem Platform
+                        </p>
+                    </div>      
                 </div>
-                <div class="col-md-6 text-center middle-box">
-                    <img src='/public/assets/home1.png' class='img-fit'>
+                <div class="col-md-6">
+                    <img src='/public/assets/home1.png' style="max-width: 100%; max-height: 100%;" >
                 </div>
             </div>
         </div>
@@ -29,10 +25,10 @@
     </section>
 
     <!-- Game Section-->
-    <section class="bg-game page-section" id="game">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-4">
+    <section class="bg-game page-section home-container" id="game" >
+        <div class="container"  >
+            <div class="row align-items-center"  >
+                <div class="col-sm-5">
                     <span class="game-text" id="our-games-text">
                         Our Games
                     </span>
@@ -40,7 +36,7 @@
                         <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).</p>
                 </div>
 
-                <div class="col-sm-8 ">
+                <div class="col-sm-7">
                     <div class="gallery js-flickity">
                         <div class="gallery-cell">
                             <div class="carousel-item-container" id="item1">
@@ -72,8 +68,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>         
             </div>
         </div>
 
@@ -81,7 +76,7 @@
 
     <!-- Roadmap Section-->
     <section class="bg-roadmap page-section" id="roadmap">
-        <div class="container">
+        <div class="container home-container">
             <div class="row align-items-center">
                 <div class="col-md-4">
                     <img src="/public/assets/roadmap1.png" class="roadmap-container" >
@@ -97,75 +92,76 @@
     </section>
 
     <!--Sale Section-->
-    <section class="bg-sale page-section" id="sale">
-        <div class="container">
-            <div class="row sale-container">
-                <div class="col-md-3 container-box" id="container-box-1"> 
-                    <div class="seed-sale-container" id="container1">
-                        <br>
-                        <div class="seed-sale-box">
-                            <span class="sale-text" id="s1-text">Seed Sale - 1</span>
-                        </div>
-                        <div class="live-text-container">
-                            <span class="time-text">LIVE SOON</span>
-                        </div>
+    <section class="bg-sale page-section sale-container" id="sale">
+        <div class="container  home-container " >
+            <div class="row align-items-center justify-content-center"  >
+                
+                <div class="seed-sale-container" id="container1">
+                    <br>
+                    <div class="seed-sale-box">
+                        <span class="sale-text" id="s1-text">Seed Sale - 1</span>
+                    </div>
+                    <div class="live-text-container">
+                        <span class="time-text">LIVE SOON</span>
+                    </div>
 
-                        <div style="margin-left: 35px; margin-top: 20px;">
-                            <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
-                                Total Allocation<br>
-                                2% from total supply<br>
-                                20,000,000 CreoEngine</span>
-                        </div>
+                    <div class="token-desc-text">
+                        <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
+                            Total Allocation<br>
+                            2% from total supply<br>
+                            20,000,000 CreoEngine</span>
                     </div>
                 </div>
+               
 
-                <div class="col-md-3 container-box"> 
-                    <div class="seed-sale-container" id="container2">
-                        <br>
-                        <div class="seed-sale-box">
-                            <span class="sale-text" id="s1-text">Seed Sale - 2</span>
-                        </div>
-                        <div class="live-text-container">
-                            <span class="time-text">COMING SOON</span>
-                        </div>
+              
+                <div class="seed-sale-container" id="container2">
+                    <br>
+                    <div class="seed-sale-box">
+                        <span class="sale-text" id="s1-text">Seed Sale - 2</span>
+                    </div>
+                    <div class="live-text-container">
+                        <span class="time-text">COMING SOON</span>
+                    </div>
 
-                        <div style="margin-left: 35px; margin-top: 20px;">
-                            <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
-                                Total Allocation<br>
-                                3% from total supply<br>
-                                30,000,000 CreoEngine</span>
-                        </div>
+                    <div class="token-desc-text">
+                        <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
+                            Total Allocation<br>
+                            3% from total supply<br>
+                            30,000,000 CreoEngine</span>
                     </div>
                 </div>
+               
 
-                <div class="col-md-3" id="container-box-3"> 
-                    <div class="seed-sale-container" id="container2">
-                        <br>
-                        <div class="seed-sale-box">
-                            <span class="sale-text" id="s1-text">Seed Sale - 3</span>
-                        </div>
-                        <div class="live-text-container">
-                            <span class="time-text">COMING SOON</span>
-                        </div>
+                
+                <div class="seed-sale-container" id="container2">
+                    <br>
+                    <div class="seed-sale-box">
+                        <span class="sale-text" id="s1-text">Seed Sale - 3</span>
+                    </div>
+                    <div class="live-text-container">
+                        <span class="time-text">COMING SOON</span>
+                    </div>
 
-                        <div style="margin-left: 35px; margin-top: 20px;">
-                            <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
-                                Total Allocation<br>
-                                5% from total supply<br>
-                                50,000,000 CreoEngine</span>
-                        </div>
+                    <div class="token-desc-text">
+                        <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
+                            Total Allocation<br>
+                            5% from total supply<br>
+                            50,000,000 CreoEngine</span>
                     </div>
                 </div>
+                
             </div>
         </div> 
-        <br>
+        
         <%- include ('partials/footer') %> 
+        
     </section>
 
     <!--Team Section-->
-    <section class="bg-team page-section" id="team">
-        <div class="container">
-            <div class="row " style="margin-top: 7%;" >
+    <section class="bg-team page-section home-container" id="team">
+        <div class="container ">
+            <div class="row">
                 <div class="col-md-5">
                     <span class="team-text" id="our-team-text">
                         Our Team
@@ -180,9 +176,6 @@
 
                 </div>
                 <div class="col-md-7 align-items-center" >
-                    <!-- <div class="team-container">
-                        <img class="img-box" src="public/assets/team.png"> 
-                    </div> -->
                     <table class="desktop-container">
                         <tr>
                             <% for (var i = 0; i < 5; i++) { %>
