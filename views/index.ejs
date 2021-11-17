@@ -1,13 +1,12 @@
     <%- include ('partials/header',{title:"Creo Engine"}) %> 
 
     <!--Home Section-->
-    <section class="bg-main page-section" id="home">
-     
+    <section class="bg-main page-section home-container" id="home">
         <div class="container" id="home-adjust">
-            <div class="row align-items-center home-container" >
+            <div class="row align-items-center" >
                 <div class="col-md-6">
                     <div>
-                        <p class='text-main font-barlow'>
+                        <p class='text-main '>
                             <span class='text-main text-bolder'>CREO</span><span class='text-main-2 text-bolder '>tion for All</span>
                         </p>
                         <p class=' text-main font-barlow'>
@@ -16,8 +15,8 @@
                         </p>
                     </div>      
                 </div>
-                <div class="col-md-6">
-                    <img src='/public/assets/home1.png' style="max-width: 100%; max-height: 100%;" >
+                <div class="col-md-6 ">
+                    <img src='/public/assets/home1.png' class="img-fit" >
                 </div>
             </div>
         </div>
@@ -27,16 +26,20 @@
     <!-- Game Section-->
     <section class="bg-game page-section home-container" id="game" >
         <div class="container"  >
-            <div class="row align-items-center"  >
-                <div class="col-sm-5">
-                    <span class="game-text" id="our-games-text">
-                        Our Games
-                    </span>
-                    <p class="game-text">All CreoEngine games are interoperable,
-                        <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).</p>
+            <div class="row" >
+                <div class="col-md-5">
+                    <div >
+                        <span class="white-color" id="our-games-text">
+                            Our Games
+                        </span>
+                        <p class="white-color">All CreoEngine games are interoperable,
+                            <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).
+                        </p>
+
+                    </div>
                 </div>
 
-                <div class="col-sm-7">
+                <div class="col-md-7">
                     <div class="gallery js-flickity">
                         <div class="gallery-cell">
                             <div class="carousel-item-container" id="item1">
@@ -45,15 +48,15 @@
                                     <span class="game-type-text" id="game-text-1">RPG</span>
                                 </div>
                                 <div class="game-img-container">
-                                    <img class="img-box" src="public/assets/game.png"> 
+                                    <img  src="public/assets/game.png"> 
                                 </div>
                                 <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
                                 <div class="btn-container">
                                     <div class="btn-fit">
-                                        <img class="img-box" src="public/assets/google-btn.png">
+                                        <img src="public/assets/google-btn.png">
                                     </div>
                                     <div class="btn-fit">
-                                        <img class="img-box" src="public/assets/apple-btn.png">
+                                        <img  src="public/assets/apple-btn.png">
                                     </div>
                                 </div>
                                 <button id="btn-visit-website">Visit Website</button>
@@ -63,94 +66,106 @@
                             <div class="carousel-item-container" id="item1">
                                 <br>
                                 <div class="game-type2-container">
-                                    <span class="game-type-text" id="game-text-2">More Games to come</span>
+                                    <span class="game-type-text white-color">More Games to come</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>         
+                    
+                </div>    
+                <div  class="img-floating">
+                    <img src="/public/assets/game-1.png" class="floating">
+                </div>     
             </div>
         </div>
 
     </section>
 
     <!-- Roadmap Section-->
-    <section class="bg-roadmap page-section" id="roadmap">
-        <div class="container home-container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <img src="/public/assets/roadmap1.png" class="roadmap-container" >
-                </div>
-                <div class="col-md-4">
-                    <img src="/public/assets/roadmap2.png" class="roadmap-container">
-                </div>
-                <div class="col-md-4">
-                    <img src="/public/assets/roadmap3.png" class="roadmap-container">
-                </div>
+    <section class="bg-roadmap page-section home-container"  id="roadmap">
+        <div class="container ">
+            <div class="row">
+                <% for (var i = 0; i < roadmap.length; i++) { %>
+                    <div class="col-md-4 rightbox" >
+                        <div class="rb-container">
+                            <ul class="rb">
+                                <% for (var j = 0; j < roadmap[i].length; j++) { %>
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            <%= roadmap[i][j].timeline %>
+                                        </div>
+                                        <div class="item-title"> <%- roadmap[i][j].title %></div>
+                            
+                                    </li>
+                                <%}%>
+                            </ul>
+                        </div>
+                    </div>                
+                <% } %>
             </div>
         </div>
     </section>
 
     <!--Sale Section-->
     <section class="bg-sale page-section sale-container" id="sale">
-        <div class="container  home-container " >
-            <div class="row align-items-center justify-content-center"  >
-                
-                <div class="seed-sale-container" id="container1">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 1</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">LIVE SOON</span>
-                    </div>
-
-                    <div class="token-desc-text">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,015<br>
-                            Total Allocation<br>
-                            2% from total supply<br>
-                            20,000,000 CreoEngine</span>
-                    </div>
-                </div>
-               
-
-              
-                <div class="seed-sale-container" id="container2">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 2</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">COMING SOON</span>
-                    </div>
-
-                    <div class="token-desc-text">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,02<br>
-                            Total Allocation<br>
-                            3% from total supply<br>
-                            30,000,000 CreoEngine</span>
-                    </div>
-                </div>
-               
-
-                
-                <div class="seed-sale-container" id="container2">
-                    <br>
-                    <div class="seed-sale-box">
-                        <span class="sale-text" id="s1-text">Seed Sale - 3</span>
-                    </div>
-                    <div class="live-text-container">
-                        <span class="time-text">COMING SOON</span>
-                    </div>
-
-                    <div class="token-desc-text">
-                        <span id="token-price-text" class="sale-text">Token Price<br>$0,025<br>
-                            Total Allocation<br>
-                            5% from total supply<br>
-                            50,000,000 CreoEngine</span>
+        <div class="container   " >
+            <div class="row align-items-center justify-content-center"  > 
+                <div class="col-md-4">
+                    <div class="seed-sale-container" id="container1">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="white-color" id="s1-text">Seed Sale - 1</span>
+                        </div>
+                        <div class="live-text-container">
+                            <span class="time-text">LIVE SOON</span>
+                        </div>
+    
+                        <div class="token-desc-text">
+                            <span id="token-price-text" class="white-color">Token Price<br>$0,015<br>
+                                Total Allocation<br>
+                                2% from total supply<br>
+                                20,000,000 CreoEngine</span>
+                        </div>
                     </div>
                 </div>
                 
+                <div class="col-md-4">
+                    <div class="seed-sale-container" id="container2">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="white-color" id="s1-text">Seed Sale - 2</span>
+                        </div>
+                        <div class="live-text-container">
+                            <span class="time-text">COMING SOON</span>
+                        </div>
+    
+                        <div class="token-desc-text">
+                            <span id="token-price-text" class="white-color">Token Price<br>$0,02<br>
+                                Total Allocation<br>
+                                3% from total supply<br>
+                                30,000,000 CreoEngine</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="seed-sale-container" id="container2">
+                        <br>
+                        <div class="seed-sale-box">
+                            <span class="white-color" id="s1-text">Seed Sale - 3</span>
+                        </div>
+                        <div class="live-text-container">
+                            <span class="time-text">COMING SOON</span>
+                        </div>
+    
+                        <div class="token-desc-text">
+                            <span id="token-price-text" class="white-color">Token Price<br>$0,025<br>
+                                Total Allocation<br>
+                                5% from total supply<br>
+                                50,000,000 CreoEngine</span>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div> 
         
@@ -180,8 +195,8 @@
                         <tr>
                             <% for (var i = 0; i < 5; i++) { %>
                                   <td>
-                                      <div style="width: 140px; height: 140px; background-size: cover;">
-                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      <div id="desktop-size-grid-1">
+                                          <img src="<%= team[i] %>" >
                                       </div>
                                   </td>
                                    
@@ -190,8 +205,8 @@
                         <tr>
                             <% for (var i = 5; i < 9; i++) { %>
                                 <td>
-                                    <div style="width: 150px; height: 150px; background-size: cover;">
-                                        <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                    <div id="desktop-size-grid-2">
+                                        <img src="<%= team[i] %>">
                                     </div>
                                 </td>
                                        
@@ -200,8 +215,8 @@
                         <tr>
                             <% for (var i = 9; i < 13; i++) { %>
                                 <td>
-                                    <div style="width: 150px; height: 150px; background-size: cover;">
-                                        <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                    <div id="desktop-size-grid-2">
+                                        <img src="<%= team[i] %>">
                                     </div>
                                 </td>
                                        
@@ -213,8 +228,8 @@
                         <tr>
                             <% for (var i = 0; i < 3; i++) { %>
                                   <td>
-                                      <div style="height: 130px; width: 100px;">
-                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      <div id="mobile-size-grid">
+                                          <img src="<%= team[i] %>">
                                       </div>
                                   </td>
                                    
@@ -223,8 +238,8 @@
                         <tr>
                             <% for (var i = 3; i < 6; i++) { %>
                                   <td>
-                                      <div style="height: 130px; width: 100px;">
-                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      <div id="mobile-size-grid">
+                                          <img src="<%= team[i] %>" >
                                       </div>
                                   </td>
                                    
@@ -233,8 +248,8 @@
                         <tr>
                             <% for (var i = 6; i < 9; i++) { %>
                                   <td>
-                                      <div style="height: 130px; width: 100px;">
-                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      <div id="mobile-size-grid">
+                                          <img src="<%= team[i] %>">
                                       </div>
                                   </td>
                                    
@@ -243,8 +258,8 @@
                         <tr>
                             <% for (var i = 9; i < 12; i++) { %>
                                   <td>
-                                      <div style="height: 130px; width: 100px;">
-                                          <img src="<%= list[i] %>" style="max-width: 100%; max-height: 100%;">
+                                      <div id="mobile-size-grid">
+                                          <img src="<%= team[i] %>" >
                                       </div>
                                   </td>
                                    
@@ -253,8 +268,8 @@
                         <tr>
                             <td></td>
                             <td>
-                                <div style="height: 130px; width: 100px;">
-                                    <img src="<%= list[12] %>" style="max-width: 100%; max-height: 100%;">
+                                <div id="mobile-size-grid">
+                                    <img src="<%= team[12] %>">
                                 </div>
                             </td>
                         </tr>
