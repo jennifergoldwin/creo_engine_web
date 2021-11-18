@@ -103,6 +103,9 @@ img{
 }
 .img-fit{
     float: right;
+    background-image: url("/public/assets/home (1).png");
+    background-size: 390px;
+    background-repeat: no-repeat;
 }
 .text-bolder{
     font-weight: 500;
@@ -114,6 +117,10 @@ img{
 .text-main-2{
     font-size: 190%;
     color: #4D4D4D;
+}
+
+.floating-img-container{
+    width: 400px; height: 400px; position: relative;
 }
 
 /*-----------------------Game-----------------------------------*/
@@ -422,6 +429,14 @@ img{
     height: 130px; width: 100px;
 }
 /*-----------------Media Query---------------------*/
+@media screen and (max-width: 360px){
+    .img-fit{
+        float: none;
+        display: flex;
+        background-size: 100%;
+    }
+}
+
 @media (max-width: 820px){
     /*---------Home-----------*/
     #home-adjust{
@@ -500,11 +515,11 @@ img{
 .floating{
     float: inline-end;
     animation-name:Floatingx ;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     -moz-animation-name: Floating;
-    -moz-animation-duration: 3s;
+    -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
     max-width: 90%;
@@ -513,12 +528,120 @@ img{
 
 @keyframes Floatingx{
     from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
+    65% {-webkit-transform:translate(0, 25px);}
     to {-webkit-transform: translate(0, -0px);}    
 }
     
 @keyframes Floating{
     from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 25px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+.floating-2{
+    float: inline-end;
+    animation-name:Floatingx-2 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating-2;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@keyframes Floatingx-2{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0px, -25px);}
+    to {-webkit-transform: translate(0, -0px);}    
+}
+    
+@keyframes Floating-2{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, -25px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+.floating-3{
+    float: inline-end;
+    animation-name:Floatingx-3 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating-3;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@keyframes Floatingx-3{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(-25px, 0px);}
+    to {-webkit-transform: translate(0px, 0px);}    
+}
+    
+@keyframes Floating-3{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(-25px, 0px);}
+    to {-moz-transform: translate(0px, 0px);}    
+}
+
+.floating-4{
+    float: inline-end;
+    animation-name:Floatingx-4 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating-4;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@keyframes Floatingx-4{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(25px, 0px);}
+    to {-webkit-transform: translate(-0px, 0px);}    
+}
+    
+@keyframes Floating-4{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(25px, 0px);}
+    to {-moz-transform: translate(-0px, 0px);}    
+}
+.floating-5{
+    float: inline-end;
+    animation-name:Floatingx-5 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating-5;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@keyframes Floatingx-5{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);}    
+}
+    
+@keyframes Floating-5{
+    from {-moz-transform:translate(0, 0px);}
     65% {-moz-transform:translate(0, 15px);}
     to {-moz-transform: translate(0, -0px);}    
 }
+
+/* .animate-home{
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+} */

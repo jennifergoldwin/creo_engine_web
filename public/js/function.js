@@ -3,7 +3,7 @@ var lastId,
     topMenu = $("#top-menu"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
-    menuItems = topMenu.find("a"),
+    menuItems = topMenu.find("a .scroll-item"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
@@ -45,3 +45,5 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+
