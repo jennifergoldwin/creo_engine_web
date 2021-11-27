@@ -1,37 +1,56 @@
     <%- include ('partials/header',{title:"Creo Engine"}) %> 
 
     <!--Home Section-->
-    <section class="bg-main page-section home-container" id="home">
-        <div class="container" id="home-adjust">
-            <div class="row align-items-center" >
+    <section class="bg-home page-section home-container" id="home">
+        <div  class="container" id="home-adjust">
+            <div class="row align-items-center">
                 <div class="col-md-6">
                     <div>
                         <p class='text-main '>
                             <span class='text-main text-bolder'>CREO</span><span class='text-main-2 text-bolder '>tion for All</span>
                         </p>
-                        <p class=' text-main font-barlow'>
+                        <p class=' text-main-2' id="typing-container">
                             Best Decentralized<br>
-                            Gaming Ecosystem Platform
+                            <span style="color:#5481B0;" id="typed"></span>
                         </p>
-                    </div>      
+                    </div>
+                    
+                    <div >
+                        <button class="btn-home-join-us">Join Us</button>
+                        <button class="btn-rounded"><i class="fab fa-discord fa-lg"></i></button>
+                        <button class="btn-rounded"><i class="fab fa-telegram-plane fa-lg"></i></button>
+                    </div>
+
+                    <div class="btn-store-container" >
+                        <span style="font-weight: 600;">Coming soon</span>
+                        <div>
+                            <button class="btn-store-apple">
+                            </button>
+                            <button class="btn-store-google">
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6" >
-                    <div  class="img-fit">
+                    <div  class="img-fit" style="height: 450px;">
                         <div  class="floating-img-container">
-                            <div class="floating-3" style="height: 60px; width: 60px; position: absolute; top: 200px; left:-5%;">
-                                <img src="/public/assets/home (2).png">
+                            <div class="floating-3">
+                                <img src="/public/assets/home (2).png" loading="lazy">
                             </div>
-                            <div class="floating-4" style="height: 150px; width: 150px; position: absolute; top: 140px;left: 80%;">
-                                <img src="/public/assets/home (3).png">
+                            <div class="floating-4">
+                                <img src="/public/assets/home (3).png" loading="lazy">
                             </div>
-                            <div class="floating-2" style="height: 170px; width: 170px; position: absolute; top: -40px;left: 60%;">
-                                <img src="/public/assets/home (4).png">
+                            <div class="floating-2" >
+                                <img src="/public/assets/home (4).png" loading="lazy">
                             </div>
-                            <div class="floating-5" style="height: 150px; width: 150px; position: absolute; top: 100px; left: 20%;">
-                                <img src="/public/assets/home (5).png">
+                            <div class="floating-5">
+                                <img src="/public/assets/home (5).png" loading="lazy">
                             </div>
-                            <div class="floating" style="height: 330px; width: 330px; position: absolute; top: 250px; left: 10%;">
-                                <img src="/public/assets/home (6).png">
+                            <div class="floating">
+                                <img src="/public/assets/home (6).png" loading="lazy">
+                            </div>
+                            <div style="height: 50%; width: 50%; left: -47%; bottom: 0; position: absolute;">
+                                <img src="/public/assets/icon-creo-home.png" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -41,23 +60,26 @@
         
     </section>
 
-    <!-- Game Section-->
+    <!-- Game/Feature Section-->
     <section class="bg-game page-section home-container" id="game" >
         <div class="container"  >
             <div class="row" >
-                <div class="col-md-5">
-                    <div >
+                <div class="col-md-5" >
+                    <div data-aos="fade-right">
                         <span class="white-color" id="our-games-text">
-                            Our Games
+                            Our Creoverse
                         </span>
                         <p class="white-color">All CreoEngine games are interoperable,
                             <br>that gamers can enjoy with their NFTs<br>(non-fungible tokens).
                         </p>
-
                     </div>
+
+                    <div  class="desktop-text" style="width: 350px;">
+                        <img src="/public/assets/game-1.png" class="floating-game" loading="lazy">
+                    </div> 
                 </div>
 
-                <div class="col-md-7">
+                <div data-aos="flip-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-7">
                     <div class="gallery js-flickity">
                         <div class="gallery-cell">
                             <div class="carousel-item-container" id="item1">
@@ -66,24 +88,61 @@
                                     <span class="game-type-text" id="game-text-1">RPG</span>
                                 </div>
                                 <div class="game-img-container">
-                                    <img  src="public/assets/game.png"> 
+                                    <img  src="public/assets/game.png"  loading="lazy"> 
                                 </div>
                                 <span id="game-desc-text">NFT Assets. Turn-Based. Anime-Inspired</span>
                                 <div class="btn-container">
                                     <div class="btn-fit">
-                                        <img src="public/assets/google-btn.png">
+                                        <img src="public/assets/google-btn.png" loading="lazy">
                                     </div>
                                     <div class="btn-fit">
-                                        <img  src="public/assets/apple-btn.png">
+                                        <img  src="public/assets/apple-btn.png" loading="lazy">
                                     </div>
                                 </div>
                                 <button id="btn-visit-website">Visit Website</button>
                             </div>
                         </div>
+                        
                         <div class="gallery-cell">
-                            <div class="carousel-item-container" id="item1">
+                            <div class="carousel-item-container" id="item1" style="display: flex; flex-direction: column; justify-content: center;">
+                                <div>
+                                    <img src="/public/assets/game-2.png" loading="lazy">
+                                </div>
+                                    
+                                <div class="game-type2-container"  >
+                                    <span class="game-type-text white-color">Coming Soon</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-cell">
+                            <div class="carousel-item-container" id="item1" style="display: flex; flex-direction: column; justify-content: center;">
+                                <div>
+                                    <img src="/public/assets/game-3.png" loading="lazy">
+                                </div>
+                                    
+                                <div class="game-type2-container"  >
+                                    <span class="game-type-text white-color">Coming Soon</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-cell">
+                            <div class="carousel-item-container" id="item1" style="display: flex; flex-direction: column; justify-content: center;">
+                                <div>
+                                    <img src="/public/assets/game-4.png" loading="lazy">
+                                </div>
+                                    
+                                <div class="game-type2-container"  >
+                                    <span class="game-type-text white-color">Coming Soon</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-cell">
+                            <div class="carousel-item-container" id="item1" style="display: flex; justify-content: center;">
                                 <br>
-                                <div class="game-type2-container">
+                                <div class="game-type2-container" >
                                     <span class="game-type-text white-color">More Games to come</span>
                                 </div>
                             </div>
@@ -91,45 +150,20 @@
                     </div>
                     
                 </div>    
-                <div  class="img-floating">
-                    <img src="/public/assets/game-1.png" class="floating">
+                <div  class="img-floating mobile-text">
+                    <img src="/public/assets/game-1.png" class="floating-game" loading="lazy">
                 </div>     
             </div>
         </div>
 
     </section>
 
-    <!-- Roadmap Section-->
-    <section class="bg-roadmap page-section home-container"  id="roadmap">
-        <div class="container ">
-            <div class="row">
-                <% for (var i = 0; i < roadmap.length; i++) { %>
-                    <div class="col-md-4 rightbox" >
-                        <div class="rb-container">
-                            <ul class="rb">
-                                <% for (var j = 0; j < roadmap[i].length; j++) { %>
-                                    <li class="rb-item" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            <%= roadmap[i][j].timeline %>
-                                        </div>
-                                        <div class="item-title"> <%- roadmap[i][j].title %></div>
-                            
-                                    </li>
-                                <%}%>
-                            </ul>
-                        </div>
-                    </div>                
-                <% } %>
-            </div>
-        </div>
-    </section>
-
     <!--Sale Section-->
     <section class="bg-sale page-section sale-container" id="sale">
         <div class="container   " >
-            <div class="row align-items-center justify-content-center"  > 
-                <div class="col-md-4">
-                    <div class="seed-sale-container" id="container1">
+            <div class="row align-items-center"> 
+                <div class="col-md-4 home-container">
+                    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="seed-sale-container" id="container1">
                         <br>
                         <div class="seed-sale-box">
                             <span class="white-color" id="s1-text">Seed Sale - 1</span>
@@ -147,8 +181,8 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="seed-sale-container" id="container2">
+                <div class="col-md-4 home-container">
+                    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="seed-sale-container" id="container2">
                         <br>
                         <div class="seed-sale-box">
                             <span class="white-color" id="s1-text">Seed Sale - 2</span>
@@ -166,8 +200,8 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="seed-sale-container" id="container2">
+                <div class="col-md-4 home-container">
+                    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="seed-sale-container" id="container2">
                         <br>
                         <div class="seed-sale-box">
                             <span class="white-color" id="s1-text">Seed Sale - 3</span>
@@ -187,54 +221,111 @@
             </div>
         </div> 
         
-        <%- include ('partials/footer') %> 
+        <%- include ('partials/footer-sale') %> 
         
+    </section>
+
+    <!--Tokenomics Section-->
+    <section class="bg-tokenomics page-section home-container" id="tokenomics" >
+        <div class="container">
+            <div class="row">
+               <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style="display: flex; flex-direction: column; padding-left: 15px;">
+                    <span class="tokenomics-text-1">Tokenomics</span>
+                    <span class="tokenomics-text-2">Total Supply:</span>
+                    <span class="tokenomics-text-2">1,0000,000,000 CreoEngine</span>
+               </div>
+                
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style="width: 600px; margin-left: 50px; margin-right: 50px; margin-top: 30px;" >
+                    <img src="/public/assets/tokenomics-diagram.png" loading="lazy">
+                </div>
+            </div>
+
+            <div data-aos="zoom-out-down" data-aos-duration="3000" style="margin-top: 30px;">
+                <div class="tokenomics-border-1" >
+                    <span class="white-color partnership-text">Partnerships & Supported by</span>
+                </div>
+                <div class="tokenomics-border-2">
+
+                    <div class="test">
+                        <img src="/public/assets/partnership/muse.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/nomina.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/strt.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/ama.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/nusa.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/hecto.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/wnhair.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/maxin.png" loading="lazy" style="width: 172px; height: 99px;">
+                        <img src="/public/assets/partnership/serba.png" loading="lazy" style="width: 172px; height: 99px;">
+                    </div>
+
+                    <!-- <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <div style="display: flex; flex-direction: row;">
+                            <img src="/public/assets/partnership/muse.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/nomina.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/strt.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/ama.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/nusa.png" loading="lazy" style="width: 172px; height: 99px;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: row;">
+                            <img src="/public/assets/partnership/hecto.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/wnhair.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/maxin.png" loading="lazy" style="width: 172px; height: 99px;">
+                            <img src="/public/assets/partnership/serba.png" loading="lazy" style="width: 172px; height: 99px;">
+                            
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!--Team Section-->
     <section class="bg-team page-section home-container" id="team">
         <div class="container ">
             <div class="row">
-                <div class="col-md-5">
-                    <span class="team-text" id="our-team-text">
+                <div data-aos="fade-right" class="col-md-5">
+                    <span class="white-color" id="our-games-text">
                         Our Team
                     </span>
-                    <p class="team-text mobile-text" >The CreoEngine team is a group of developers, operators, marketers,
+                    <p class="white-color mobile-text" >The CreoEngine team is a group of developers, operators, marketers,
                         and designers with expertise in their respective fields
                     </p>
             
-                    <p class="team-text desktop-text">The CreoEngine team is a group of developers, 
+                    <p class="white-color desktop-text">The CreoEngine team is a group of developers, 
                         <br>operators, marketers, and designers with exper-<br>tise in their respective fields
                     </p>
 
                 </div>
-                <div class="col-md-7 align-items-center" >
+                <div data-aos="fade-left" class="col-md-7 align-items-center" >
                     <table class="desktop-container">
                         <tr>
                             <% for (var i = 0; i < 5; i++) { %>
                                   <td>
                                       <div id="desktop-size-grid-1">
-                                          <img src="<%= team[i] %>" >
+                                          <img src="<%= team[i] %>" loading="lazy">
                                       </div>
                                   </td>
                                    
                             <% } %>
                         </tr>
                         <tr>
-                            <% for (var i = 5; i < 9; i++) { %>
+                            <% for (var i = 5; i < 10; i++) { %>
                                 <td>
                                     <div id="desktop-size-grid-2">
-                                        <img src="<%= team[i] %>">
+                                        <img src="<%= team[i] %>" loading="lazy">
                                     </div>
                                 </td>
                                        
                             <% } %>
                         </tr> 
                         <tr>
-                            <% for (var i = 9; i < 13; i++) { %>
+                            <% for (var i = 10; i < 14; i++) { %>
                                 <td>
                                     <div id="desktop-size-grid-2">
-                                        <img src="<%= team[i] %>">
+                                        <img src="<%= team[i] %>" loading="lazy">
                                     </div>
                                 </td>
                                        
@@ -247,7 +338,7 @@
                             <% for (var i = 0; i < 3; i++) { %>
                                   <td>
                                       <div id="mobile-size-grid">
-                                          <img src="<%= team[i] %>">
+                                          <img src="<%= team[i] %>" loading="lazy">
                                       </div>
                                   </td>
                                    
@@ -257,7 +348,7 @@
                             <% for (var i = 3; i < 6; i++) { %>
                                   <td>
                                       <div id="mobile-size-grid">
-                                          <img src="<%= team[i] %>" >
+                                          <img src="<%= team[i] %>" loading="lazy">
                                       </div>
                                   </td>
                                    
@@ -267,7 +358,7 @@
                             <% for (var i = 6; i < 9; i++) { %>
                                   <td>
                                       <div id="mobile-size-grid">
-                                          <img src="<%= team[i] %>">
+                                          <img src="<%= team[i] %>" loading="lazy">
                                       </div>
                                   </td>
                                    
@@ -277,25 +368,60 @@
                             <% for (var i = 9; i < 12; i++) { %>
                                   <td>
                                       <div id="mobile-size-grid">
-                                          <img src="<%= team[i] %>" >
+                                          <img src="<%= team[i] %>" loading="lazy">
                                       </div>
                                   </td>
                                    
                             <% } %>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>
-                                <div id="mobile-size-grid">
-                                    <img src="<%= team[12] %>">
-                                </div>
-                            </td>
+                            <% for (var i = 12; i < 14; i++) { %>
+                                <td>
+                                    <div id="mobile-size-grid">
+                                        <img src="<%= team[i] %>" loading="lazy">
+                                    </div>
+                                </td>
+
+                            <% } %>
+                            
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Roadmap Section-->
+    <section class="bg-roadmap page-section home-container"  id="roadmap">
+        <div class="container" data-aos="zoom-in">
+            <div class="row" >
+                <% for (var i = 0; i < roadmap.length; i++) { %>
+                    <div class="col-md-4 rightbox" >
+                        <div class="rb-container">
+                            <ul class="rb">
+                                <% for (var j = 0; j < roadmap[i].length; j++) { %>
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            <%= roadmap[i][j].timeline %>
+                                        </div>
+                                        <div class="item-title"> <%- roadmap[i][j].title %></div> 
+                                    </li>
+                                <%}%>
+                            </ul>
+                        </div>
+                    </div>                
+                <% } %>
+            </div>
+        </div>
+        <%- include ('partials/footer-roadmap') %>
+        
+    </section>
+
+    
+    <script>
+        AOS.init();
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="/public//js/function.js"></script>
     <script src="/public/js/wallet-service.js"></script>

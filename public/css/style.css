@@ -5,11 +5,11 @@ body{
 }
 section{
     position: relative;
-    min-height:100vh !important;
+    min-height:100vh ;
     overflow-x: hidden;
     overflow-y:auto;
-    background-position: center !important;
-    background-size: cover !important;
+    /* background-position: center !important; */
+    /* background-size: cover !important; */
 }
 img{
     max-width: 100%;
@@ -19,6 +19,8 @@ img{
 .white-color{
     color: white;
 }
+
+.fab {color: white; }
 
 
 /* ------------------- Search Bar -------------------------*/
@@ -72,7 +74,7 @@ img{
 }
 
 .custom-navbar{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);;
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(84,85,99, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -90,7 +92,7 @@ img{
 
 .nav-link{
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #market-link{
@@ -98,35 +100,91 @@ img{
 }
 
 /* ------------------------- Home ------------------------------*/
+.bg-home{
+    background: url("/public/assets/bg-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .home-container{
     display: flex; justify-content: center; align-items: center;
 }
 .img-fit{
     float: right;
+    /* margin-top: 120px; */
     background-image: url("/public/assets/home (1).png");
-    background-size: 390px;
+    background-size: 400px;
     background-repeat: no-repeat;
+    /* align-items: center; */
 }
 .text-bolder{
     font-weight: 500;
 }
 .text-main{
-    font-size: 190%;
+    font-size: 195%;
     color:#5481B0;
 }
 .text-main-2{
-    font-size: 190%;
+    font-size: 195%;
     color: #4D4D4D;
+    font-weight: 500;
 }
 
 .floating-img-container{
     width: 400px; height: 400px; position: relative;
 }
 
+.btn-home-join-us{
+    border: none;
+    border-radius: 30px;
+    width: 160px;
+    height: 46px;
+    color: white;
+    background-color: #4975E6;
+    font-size: 140%;
+}
+
+.btn-rounded{
+    border-radius: 50%;
+    margin-left: 8px;
+    /* margin-top: 6px; */
+    border: none;
+    width: 46px;
+    height: 46px;
+    background-color: #4975E6;
+}
+.btn-store-apple{
+    width: 120px;
+    height: 40px;  
+    border: none; 
+    background: url("/public/assets/apple-rect-btn.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+.btn-store-google{
+    width: 120px;
+    height: 40px;  
+    border: none; 
+    background: url("/public/assets/google-rect-btn.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+#typing-container{
+    height: 130px;
+}
+
+.btn-store-container{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 /*-----------------------Game-----------------------------------*/
 
 .bg-game{
-    background-image: linear-gradient(to bottom,#5470E7,#8956E9);
+    /* background-image: linear-gradient(to bottom,#5470E7,#8956E9); */
+    background: url("/public/assets/bg-game.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #our-games-text{
@@ -136,6 +194,7 @@ img{
     width: 77%;
     height: 455px;
     justify-content: center;
+    align-items: center;
     display: block;
     border-radius: 20px;
 }
@@ -153,7 +212,7 @@ img{
     height: 30px;
 }
 .game-type2-container{
-    margin-left: 25px;
+    /* margin-left: 25px; */
     border-radius: 5px;
     border: 1.5pt solid white;
     display: flex;
@@ -175,7 +234,19 @@ img{
     width: 85%;
     margin-bottom: 20px;
     margin-top: 20px;
+    /* animation: zoom-in-zoom-out 3s ease-in-out ; */
 }
+/* @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+} */
 #game-desc-text{
     width: 85%;
     color: white;
@@ -211,6 +282,7 @@ img{
 .gallery-cell {
     counter-increment: none;
     width: 80%;
+    margin: 0 -27px;
 }
   
 .gallery-cell:before {
@@ -239,7 +311,27 @@ img{
 
  /*----------------------- Roadmap------------------------------- */
 .bg-roadmap{
-    background:url("/public/assets/bg-roadmap.png");
+    background: url("/public/assets/bg-roadmap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.animate-roadmap-1{
+    width: 120px; position: absolute; bottom:0;
+    /* transition: bottom 1.2s;
+    will-change: transform; */
+    /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
+    /* transform-style: preserve-3d; */
+    /* top: 0; */
+
+}
+.element {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    width: 20px;
+    height: 30px;
+    background: green;
+    transition: top 1.2s;
 }
 .roadmap-container{
     max-height: 100%;
@@ -248,65 +340,119 @@ img{
 /*draw roadmap timeline*/
 .rb-container {
     margin: auto;
+    margin-bottom: 50px;
     display: block;
     position: relative;
   }
   
-  .rb-container ul.rb {
-    margin: 2.5em 0;
+.rb-container ul.rb {
+    margin: 2.4em 0;
     padding: 0;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     display: inline-block;
   }
   
-  .rb-container ul.rb li {
+.rb-container ul.rb li {
     list-style: none;
     margin: auto;
     margin-left: 20px;
     min-height: 50px;
     border-left: 2pt solid #5481B0;
-    padding: 0 0 50px 30px;
+    padding: 0 0 30px 30px;
     position: relative;
   }
   
-  .rb-container ul.rb li:last-child {
+.rb-container ul.rb li:last-child {
     border-left: 0;
-  }
+}
   
-  .rb-container ul.rb li::before {
+.rb-container ul.rb li::before {
     position: absolute;
     left: -16px;
     content: " ";
     border: 8px solid #5481B0;
     border-radius: 500%;
     background: #5481B0;
+    box-shadow: 0px 0px 10px 3px #9ecaed;
     height: 30px;
     width: 30px;
     transition: all 500ms ease-in-out;
-  }
+}
   
-  .rb-container ul.rb li:hover::before {
+.rb-container ul.rb li:hover::before {
     border-color: white;
     transition: all 1000ms ease-in-out;
-  }
+}
   
-  .timestamp {
+.timestamp {
     color: #5481B0;
     font-weight: bold;
     position: relative;
     width: 100px;
     font-size: 120%;
     font-weight: 700;
-  }
+}
   
-  .item-title {
-      color: #5481B0;
-      font-weight: 500;
-  }
+.item-title {
+    color: #5481B0;
+    font-weight: 500;
+}
+.roadmap-div {
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.roadmap-div-div{
+    padding-top: 2px;
+}
+.footer-roadmap{
+    background-color: #556BB4;
+    /* background: url("/public/assets/Group\ 1752.png"); */
+    background-size: cover;
+    position: absolute; 
+    bottom: 0;
+    /* justify-content: center; */
+    /* display: flex; */
+}
+.btn-rounded-footer{
+    border-radius: 50%;
+    margin-left: 5px;
+    /* margin-top: 6px; */
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn-footer{
+    /* margin-left: 15px; */
+    display: flex;
+}
+.btn-footer .btn-rounded-footer .fab{
+    color: #556BB4;
+}
+
+#creo-icon-footer{
+    position: absolute; top: -40px; right: 350px;
+}
+.roadmap-div-div{
+    display: flex; flex-direction: row;
+}
 
 /*----------------------------Sale------------------------*/
 .bg-sale{
     background: url("/public/assets/bg-sale.png");
+    /* background-position-x: 80%;
+    background-position-y: 50%; */
+    /* background-position: center; */
+    /* background-size: 850px; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
 }
 
 .sale-container{
@@ -377,11 +523,11 @@ img{
 }
 #footer-text{
     color: white;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: 300;
 }
 .main_div {
-    height: 150px;
+    height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -397,8 +543,57 @@ img{
     height: 45px;
     width: 190px;
 }
-
+/*------------------------------Tokenomics--------------------------------*/
+.bg-tokenomics{
+    background: url("/public/assets/bg-tokenomics.png");
+    background-size: cover;
+    /* height: 180vh; */
+    /* height: 200%; */
+}
+.tokenomics-border-1{
+    height: 80px; 
+    line-height: 80px;
+    background-image: linear-gradient(to right,#5470E7,#8956E9);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;   
+    
+}
+.tokenomics-border-2{
+    height: 309px;
+    background-color: #495EAD;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tokenomics-text-1{
+    font-size: 200%; font-weight: 500;
+}
+.tokenomics-text-2{
+    font-weight: 600; font-size: 80%;
+}
+.partnership-text{
+    display: inline-block; 
+    vertical-align: middle; 
+    line-height: normal;
+    font-weight: 300;
+    font-size: 120%;
+}
+.test{
+    display: grid; 
+    grid-column: auto;
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    
+}
 /*------------------------------Team--------------------------------*/
+.bg-team{
+    background: url("/public/assets/bg-team.png");
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+}
 .team-container{
     height: 500px;
     background-size: cover;
@@ -422,6 +617,9 @@ img{
 #desktop-size-grid-1{
     width: 140px; height: 140px;
 }
+#desktop-size-grid-1:hover, #desktop-size-grid-2:hover, #mobile-size-grid:hover{
+    transform: scale(1.2);
+}
 #desktop-size-grid-2{
     width: 150px; height: 150px;
 }
@@ -429,42 +627,124 @@ img{
     height: 130px; width: 100px;
 }
 /*-----------------Media Query---------------------*/
-@media screen and (max-width: 360px){
+
+/*phone until tablet version*/
+@media (max-width: 768px){
+    .mobile-text{
+        display: inline-block;
+    }
+    .desktop-text{
+        display: none;
+    }
     .img-fit{
         float: none;
         display: flex;
         background-size: 100%;
     }
-}
-
-@media (max-width: 820px){
-    /*---------Home-----------*/
-    #home-adjust{
-        margin-top: 76px;
-    }
-
-    /*---------Game-----------*/
-    .btn-fit{
-        width: 40%;
-    }   
-    #game-desc-text{
-        font-size: 80%;
+    .text-main,.text-main-2{
+        font-size: 160%;
     }
     .carousel-item-container{
         width: 100%;
     }
-    .gallery-cell{
-        width: 100%;
+}
+@media  (max-width: 420px){
+    .img-fit{
+        float: none;
+        display: flex;
+        background-size: 100%;
     }
-    .img-floating{
-        position: static; 
+    #creo-icon-footer{
+        visibility: hidden;
     }
-    
-    /*--------Sale----------*/
+
+    .bg-home{
+        height: 170vh;
+    }
     .footer-sale{
         position: static;
         margin-top: 10px;
     }
+    
+}
+
+/*tablet until desktop version*/
+@media (min-width: 768px){
+    .mobile-text{
+        display: none;
+    }
+    .desktop-text{
+        display: inline-block;
+    }
+    
+}
+
+
+@media  (max-width: 360px) {
+    #footer-text{
+        font-size: 70%;
+    }
+    
+    .footer-roadmap{
+        height: 100px;
+    }
+    .roadmap-div-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-home{
+        height: 185vh;
+    }
+
+    #footer-text{
+        font-size: 90%;
+    }
+    #game-desc-text{
+        font-size: 70%;
+    }
+    
+}
+@media screen and (device-width: 540px) {
+    .img-fit{
+        background-size: 80%;
+    }
+    .bg-home{
+        height: 150vh;
+    }
+    .bg-sale{
+        height: 180vh;
+    }
+    .carousel-item-container{
+        width: 80%;
+    }
+  
+}
+@media screen and (max-width: 820px){
+    /*---------Home-----------*/
+    #home-adjust{
+        margin-top: 76px;
+    }
+    /*---------Game-----------*/
+    .btn-fit{
+        width: 40%;
+    }   
+    /* #game-desc-text{
+        font-size: 80%;
+    } */
+    /* .carousel-item-container{
+        width: 100%;
+    } */
+    .gallery-cell{
+        width: 100%;
+        margin: auto;
+    }
+    .img-floating, .animate-roadmap-1{
+        position: static; 
+    }
+    
+    /*--------Sale----------*/
+    
     .main_div{
         display: block;
         text-align: center;
@@ -476,30 +756,45 @@ img{
     .desktop-container {
         visibility: collapse;
     }
-    .desktop-text{
-        display: none;
-    }
-    .mobile-text{
-        display: inline-block;
-    }
+    
     .mobile-container{
         justify-content: center;
         display: flex;
         visibility: visible;
-    }
+    } 
+
     
+    
+    /*--------Tokenomics----*/
+    .test{
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+    .tokenomics-border-2{
+        height: 200%;
+    }
+    #creo-icon-footer{
+        visibility: hidden;
+    }
 }
 
+
 @media (min-width: 1000px) {
+   
     /*-------Home-------*/
     .home-container{
         width: 100vw;
         height: 100vh;
     }
+    #home-adjust{
+        margin-top: 76px;
+    }
+    .text-main{
+        font-size: 180%;
+    } 
 
     /*-------Game-------*/
     .img-floating{
-        position: absolute; bottom: 0; width: 40%; height: 40%;       
+        position: absolute; bottom: 0;  height: 40%;       
     }
 
     /*-------Team-------*/
@@ -509,9 +804,28 @@ img{
     .mobile-text{
         display: none;
     }  
+
+    .bg-tokenomics{
+        height: 180vh;
+    }
+    
 }
 
+
+
 /*-----------------Animation---------------------*/
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 2s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 1s; /* So they look staggered */
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
+
 .floating{
     float: inline-end;
     animation-name:Floatingx ;
@@ -522,8 +836,24 @@ img{
     -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    max-width: 90%;
+    /* max-width: 100%;
+    max-height: 90%; */
+    width: 75%; height: 200; position: absolute; top: 250px; left: 15%;
+}
+
+.floating-game{
+    float: inline-end;
+    animation-name:Floatingx ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    max-width: 100%;
     max-height: 90%;
+    /* width: 75%; height: 200; position: absolute; top: 250px; left: 15%; */
 }
 
 @keyframes Floatingx{
@@ -548,19 +878,20 @@ img{
     -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    max-width: 90%;
-    max-height: 90%;
+    /* max-width: 90%;
+    max-height: 90%; */
+    height: 45%; width: 45%; position: absolute; top: -40px;left: 60%;
 }
 
 @keyframes Floatingx-2{
     from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0px, -25px);}
+    65% {-webkit-transform:translate(0px, -20px);}
     to {-webkit-transform: translate(0, -0px);}    
 }
     
 @keyframes Floating-2{
     from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, -25px);}
+    65% {-moz-transform:translate(0, -20px);}
     to {-moz-transform: translate(0, -0px);}    
 }
 
@@ -574,8 +905,9 @@ img{
     -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    max-width: 90%;
-    max-height: 90%;
+    height: 15%; width: 15%; position: absolute; top: 200px; left: -2%;
+    /* max-width: 90%;
+    max-height: 90%; */
 }
 
 @keyframes Floatingx-3{
@@ -600,8 +932,9 @@ img{
     -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    max-width: 90%;
-    max-height: 90%;
+    /* max-width: 90%;
+    max-height: 90%; */
+    height: 38%; width: 38%; position: absolute; top: 140px;left: 70%;
 }
 
 @keyframes Floatingx-4{
@@ -625,8 +958,9 @@ img{
     -moz-animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    max-width: 90%;
-    max-height: 90%;
+    /* max-width: 90%;
+    max-height: 90%; */
+    height: 38%; width: 38%; position: absolute; top: 70px; left: 20%;
 }
 
 @keyframes Floatingx-5{
@@ -641,7 +975,14 @@ img{
     to {-moz-transform: translate(0, -0px);}    
 }
 
-/* .animate-home{
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-} */
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}

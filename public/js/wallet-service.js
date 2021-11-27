@@ -1,4 +1,4 @@
-import Web3 from "web3";
+// import Web3 from "web3";
 const ethEnabled = async () => {
   if (window.ethereum) {
     await window.ethereum.send('eth_requestAccounts');

@@ -11,6 +11,7 @@ var listTeam=[
     "/public/assets/team/DEVI.png",
     "/public/assets/team/TIMOTHY.png",
     "/public/assets/team/AKBAR.png",
+    "/public/assets/team/JENNIFER.png",
     "/public/assets/team/TEDY.png",
     "/public/assets/team/RICHKO.png",
     "/public/assets/team/LOUIE.png",

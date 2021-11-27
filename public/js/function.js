@@ -3,7 +3,7 @@ var lastId,
     topMenu = $("#top-menu"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
-    menuItems = topMenu.find("a .scroll-item"),
+    menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
@@ -26,8 +26,7 @@ menuItems.click(function(e){
 // Bind to scroll
 $(window).scroll(function(){
    // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
+   var fromTop = $(this).scrollTop()+topMenuHeight;  
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
@@ -43,7 +42,15 @@ $(window).scroll(function(){
        menuItems
          .parent().removeClass("active")
          .end().filter("[href='#"+id+"']").parent().addClass("active");
-   }                   
+   }     
 });
 
-
+/* Typing Animation */
+new Typed('#typed',{
+  strings : ['Gaming Ecosystem Platform','NFTs Gaming to Earn and Trade','Marketplace for Gaming NFTs'],
+  typeSpeed : 80,
+  backSpeed: 20,
+  showCursor: false,
+  // delaySpeed : 300,
+  loop : true
+});
