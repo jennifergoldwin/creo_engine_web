@@ -615,13 +615,13 @@ img{
 }
 
 #desktop-size-grid-1{
-    width: 140px; height: 140px;
+    width: 100%; height: 140px;
 }
 #desktop-size-grid-1:hover, #desktop-size-grid-2:hover, #mobile-size-grid:hover{
     transform: scale(1.2);
 }
 #desktop-size-grid-2{
-    width: 150px; height: 150px;
+    width: 100%; height: 150px;
 }
 #mobile-size-grid{
     height: 130px; width: 100px;
@@ -635,6 +635,12 @@ img{
     }
     .desktop-text{
         display: none;
+    }
+    .desktop-container{
+        visibility: collapse;
+    }
+    .mobile-container{
+        visibility: visible;
     }
     .img-fit{
         float: none;
@@ -677,10 +683,10 @@ img{
         display: inline-block;
     }
     .desktop-container{
-        display: none;
+        visibility: visible;
     }
     .mobile-container{
-        display: inline-block;
+        visibility: collapse;
     }
     
 }
