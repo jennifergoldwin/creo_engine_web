@@ -676,6 +676,12 @@ img{
     .desktop-text{
         display: inline-block;
     }
+    .desktop-container{
+        display: none;
+    }
+    .mobile-container{
+        display: inline-block;
+    }
     
 }
 
