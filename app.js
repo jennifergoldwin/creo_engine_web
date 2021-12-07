@@ -23,26 +23,26 @@ var listTeam=[
 var roadmapTimeline = [
     [
         {
-            timeline : "Q1 2022", title: "1st game alpha testing<br>IDO SALE in multiple launchpad<br>Listing on First exchanger<br>NFT DEVELOPMENT"
+            timeline : "Q1 '22", title: "1st game alpha testing<br>IDO SALE in multiple launchpad<br>Listing on First exchanger<br>NFT DEVELOPMENT"
         },
         {
-            timeline : "Q2 2022", title: "Listing on Dex<br>1st Game Close Beta<br>1st Game full release<br>Listing on Another Exchanger<br>NFT MARKETPLACE<br>2nd Game Development<br>Staking Rewards"
+            timeline : "Q2 '22", title: "Listing on Dex<br>1st Game Close Beta<br>1st Game full release<br>Listing on Another Exchanger<br>NFT MARKETPLACE<br>2nd Game Development<br>Staking Rewards"
         },
         {
-            timeline : "Q3 2022", title: "2nd Game Alpha Testing<br>Game Feature Improvement<br>Listing on Another Exchanger"
+            timeline : "Q2 '22", title: "2nd Game Alpha Testing<br>Game Feature Improvement<br>Listing on Another Exchanger"
         },
      
     ],
 
     [
         {
-            timeline : "Q4 2022", title: "Game Feature Improvement<br>2nd Game Close Beta<br>2nd Game Full release"
+            timeline : "Q4 '22", title: "Game Feature Improvement<br>2nd Game Close Beta<br>2nd Game Full release"
         },
         {
-            timeline : "Q1 2023", title: "Game Feature improvement<br>Listing on Another exchanger<br>3rd Game development"
+            timeline : "Q1 '23", title: "Game Feature improvement<br>Listing on Another exchanger<br>3rd Game development"
         },
         {
-            timeline : "Q3 2023", title: "Game Feature Improvement<br>System Improvement<br>Maintain Ecosystem"
+            timeline : "Q3 '23", title: "Game Feature Improvement<br>System Improvement<br>Maintain Ecosystem"
         },
     ],
     [
